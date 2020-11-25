@@ -3,4 +3,4 @@ docker run -it \
     -d \
     -v ${PWD}/test_volumes:/home/docker_volumes_backup_app/host_volumes \
     --name docker-volumes-backup-container \
-    docker-volumes-backup-image
+    docker-volumes-backup

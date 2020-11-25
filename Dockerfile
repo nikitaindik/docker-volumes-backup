@@ -12,6 +12,6 @@ WORKDIR /home/docker_volumes_backup_app
 
 COPY .dropbox_uploader .
 COPY dropbox_uploader.sh .
-COPY docker-entrypoint.sh .
+COPY docker_entrypoint.sh .
 
-ENTRYPOINT ["/bin/bash", "docker-entrypoint.sh"]
+ENTRYPOINT ["/bin/bash", "docker_entrypoint.sh"]
