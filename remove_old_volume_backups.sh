@@ -23,7 +23,7 @@ backup_lifetime=604800
 current_timestamp=($(date +"%s"))
 oldest_possible_backup_timestamp=`expr $current_timestamp - $backup_lifetime`
 
-list_result=$(./dropbox_uploader.sh -q -f .dropbox_uploader list)
+list_result=$(/home/docker_volumes_backup_app/dropbox_uploader.sh -q -f .dropbox_uploader list)
 
 readarray rows <<< $list_result
 

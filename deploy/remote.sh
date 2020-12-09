@@ -1,5 +1,7 @@
 docker load --input ${image_name}.tar
 
+rm ${image_name}.tar
+
 running_container_id=`docker container ls -aqf name=${image_name}`
 
 if [[ ! -z "$running_container_id" ]]
